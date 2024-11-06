@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+
+<body>
+    <h1>Form Registrasi</h1>
+    <form>
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="gender">Gender :</label>
+        <input type="radio" id="laki" name="gender" value="Laki-Laki" required>
+        <label for="laki">Laki-Laki</label>
+        <input type="radio" id="perempuan" name="gender" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+
+        <label for="alamat">Alamat :</label>
+        <input type="text" id="alamat" name="alamat"><br><br>
+
+        <label for="negara">Negara :</label>
+        <select id="negara" name="Listnegara">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapura">Singapura</option>
+            <option value="Timor Leste">Timor Leste</option>
+        </select><br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="photol">Photo :</label>
+        <input type="file" id="my file" name="my file"><br><br>
+
+        <label for="komentar">Komentar :</label><br>
+        <textarea type="komentar" id="komentar" rows="4" cols="50"></textarea>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
