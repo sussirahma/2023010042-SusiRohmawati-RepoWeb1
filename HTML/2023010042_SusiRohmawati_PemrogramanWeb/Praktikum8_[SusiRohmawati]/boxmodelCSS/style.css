@@ -1,0 +1,28 @@
+.box {
+    width: 300px;
+    padding: 20px; /* Memberikan ruang di dalam kotak */
+    margin: 50px auto; /* Menempatkan kotak di tengah halaman */
+    background-color: #f4f4f4;
+    border-radius: 10px; /* Sudut kotak melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut di sekitar kotak */
+    text-align: center; /* Memusatkan teks dan gambar di dalam kotak */
+}
+
+.box img {
+    max-width: 100%; /* Membatasi lebar gambar agar tidak keluar dari kotak */
+    height: auto; /* Menjaga rasio gambar */
+    border-radius: 8px; /* Membuat sudut gambar melengkung */
+}
+
+.box h1 {
+    font-size: 24px;
+    margin-top: 10px; /* Memberikan jarak antara gambar dan judul */
+    color: #333;
+}
+
+.box p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5; /* Jarak antar baris teks */
+    margin-top: 10px; /* Memberikan jarak antara judul dan deskripsi */
+}

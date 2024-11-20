@@ -1,0 +1,14 @@
+body {
+  background-image: url("assets/rplB.png");
+  background-position: top center;
+  background-size: 100px 100px;
+  /* untuk membuat css bg tidak diulang kebawah menggunakan backgroun-repeat: no-repeat */
+}
+
+.h1 {
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+}
