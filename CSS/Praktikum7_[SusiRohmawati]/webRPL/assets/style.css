@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background: #4590ec;
+    color: white;
+    font-size: 30px;
+    width: 730px; 
+    height: 300px;
+    border-radius: 0px 0px 50px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 100px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+header h1 {
+    font-size: 2 em;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 5px 00;
+    font-size: 1.2em;
+}
+
+
+/* Navigasi */
+nav {
+    background: #000080;
+    color: white;
+    justify-content: center;
+    display: flex;
+    margin-top: 450px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #0056b3;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    margin: 20px 0;
+}
+
+/* Sidebar */
+aside {
+    margin-top: 10px;
+    margin-left: 80px;
+    background-color: antiquewhite;
+    color: black;
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px 0px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+aside img {
+    width: 150px;
+    margin: 20px;
+}
+
+aside h2 {
+    background: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* Section */
+section {
+    margin-top: 20px;
+    background-color: antiquewhite;
+}
+
+section h1 {
+    color: #000080;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    color: #000080;
+}
+.gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 32%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #000080;
+}
+
+/* Footer */
+footer {
+    background: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-radius: 50px 0px 50px 0px;
+} 

@@ -1,26 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webRPL</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
-    <header>
-        <img src="image/header.jpg" alt="Logo Politeknik">
-        <h1>Belajar Layout Website</h1>
-        <p>Menggunakan HTML dan CSS</p>
+    <div class="container">
+        <header>
+            <h1>Belajar Layout Website</h1>
+            <p>Menggunakan HTML dan CSS</p>
+        </header>
+
+
+
+        <!-- Sidebar -->
+        <aside>
+            <img src="assets/img/header.png" alt="header.jpg">
+            <h2>Artikel Popular</h2>
+            <ul class="popular-articles">
+                <li><a href="#">Desain Web</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Polibang</a></li>
+            </ul>
+        </aside>
+
+        <!-- Navigasi -->
         <nav>
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">VISI & MISI</a></li>
-            <li><a href="#">INFROMASI</a></li>
-            <li><a href="#">DOSEN</a></li>
-            <li><a href="#">KONTAK</a></li>
-            <li><a href="#">GALERI</a></li>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">VISI & MISI</a></li>
+                <li><a href="#">INFORMASI</a></li>
+                <li><a href="#">DOSEN</a></li>
+                <li><a href="#">KONTAK</a></li>
+                <li><a href="#">GALERI</a></li>
             </ul>
         </nav>
-      </header>
-    
+
+        <main>
+            <section>
+                <h1>Selamat Datang</h1>
+                <p>Belajar Membuat Layout Desain Web menggunakan HTML dan CSS dengan mudah</p>
+                <p>Untuk belajar HTML, klik halaman <a href="https://www.w3schools.com/html/default.asp">HTML</a> dan
+                    untuk
+                    belajar CSS klik halaman <a href="https://www.w3schools.com/css/default.asp">CSS</a>.
+                </p>
+
+                <h2>Galeri</h2>
+                <div class="gallery">
+                    <img src="assets/img/html1.png" alt="html.png">
+                    <img src="assets/img/css1.png" alt="css.png">
+                    <img src="assets/img/collabs.jpg" alt="collabs.png">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2023. All Rights Reserved.</p>
+            <p>Rekayasa Perangkat Lunak Politeknik Balekambang Jepara</p>
+        </footer>
+    </div>
 </body>
+
 </html>
