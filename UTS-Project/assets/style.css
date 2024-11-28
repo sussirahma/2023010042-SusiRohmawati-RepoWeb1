@@ -38,12 +38,8 @@ header img.logo {
     text-decoration: none;
 }
 
-.navbar li a:hover:not(.active) {
+.navbar li a:hover {
     background-color: #111;
-}
-
-.active {
-    background-color: #04AA6D;
 }
 
 /* home */
