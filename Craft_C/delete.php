@@ -1,14 +1,21 @@
 <?php
 include("db.php");
-if(isset($_POST['delete'])){
-    $id = $_POST['id'];
 
-    $sql = "DELETE FROM products WHERE id='$id'";
+// Periksa apakah parameter id tersedia
+if (isset($_GET['id'])) {
+    $id = intval($_GET['id']);
+
+    $sql = "DELETE FROM products WHERE id = $id";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Produk berhasil dihapus!";
+        // Redirect setelah penghapusan
+        $redirect = $_GET['redirect'] ?? 'manage_produk.php';
+        header("Location: $redirect");
+        exit;
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $conn->error;
     }
+} else {
+    echo "ID tidak ditemukan.";
 }
 ?>

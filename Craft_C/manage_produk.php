@@ -69,19 +69,17 @@ $result = $conn->query($sql);
                         // Tombol operasi dengan desain baru
                         echo "<td class='text-center'>
                         <a href='read.php?id={$row['id']}' class='btn btn-primary'>
-                            <i class='bi bi-eye'></i> View
+                        <i class='bi bi-eye'></i> View
                         </a>
                         <a href='update.php?id={$row['id']}' class='btn btn-secondary'>
-                            <i class='bi bi-pencil'></i> Edit
+                        <i class='bi bi-pencil'></i> Edit
                         </a>
-                        <form action='delete.php' method='POST' style='display:inline;'>
-                                <input type='hidden' name='id' value='{$row['id']}'>
-                            <button type='submit' name='delete' class='btn btn-danger'>
-                                <i class='bi bi-trash'></i> Delete
-                            </button>
-                        </form>
+                        <a href='delete.php?id={$row['id']}&redirect=manage_produk.php' 
+                        onclick='return confirm(\"Yakin ingin menghapus data ini?\")' 
+                        class='btn btn-danger'>
+                        <i class='bi bi-trash'></i> Delete
+                        </a>
                         </td>";
-
                     }
                 } else {
                     // Jika tidak ada produk ditemukan
