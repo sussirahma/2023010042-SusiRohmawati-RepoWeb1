@@ -44,7 +44,7 @@
                             <h3 class="fw-normal mb-3 pb-3 text-center" style="letter-spacing: 1px;">Log in</h3>
 
                             <?php
-                            // Tampilkan pesan error jika ada
+                            // Menampilkan pesan error jika ada
                             if (isset($_SESSION['error'])) {
                                 echo '<div class="alert alert-danger text-center">' . $_SESSION['error'] . '</div>';
                                 unset($_SESSION['error']); // Menghapus pesan error setelah ditampilkan

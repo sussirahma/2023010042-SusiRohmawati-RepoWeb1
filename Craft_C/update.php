@@ -74,7 +74,7 @@ if (isset($_POST['update'])) {
     // Eksekusi query
     if ($conn->query($sql) === TRUE) {
         echo "Produk berhasil diupdate!";
-        header("Location: products_list.php"); // Redirect setelah update
+        header("Location: admin.php"); // Redirect setelah update
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

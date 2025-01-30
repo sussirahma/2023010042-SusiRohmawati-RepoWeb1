@@ -54,6 +54,7 @@
           </span>
         </a>
             </li>
+            <ul class="navbar-nav  "></ul>
             <li class="nav-item active">
               <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -221,7 +222,7 @@
               echo "<div class='box'>";
               echo "<a href=''>";
 
-              // Gambar produk (pastikan path gambar sesuai dengan direktori)
+              // Gambar produk 
               echo "<div class='img-box'>";
               echo "<img src='assets/img/produk/" . $row['images'] . "' alt='" . $row['name'] . "'>";
               echo "</div>";
@@ -244,7 +245,7 @@
               }
 
               // Tombol Beli yang mengarahkan ke WhatsApp
-              $whatsappMessage = "Hallo, saya akan membeli produk anda : " . $row['name'] . " for Rp " . number_format($row['price'], 0, ',', '.') . ".";
+              $whatsappMessage = "Hallo, saya akan membeli produk anda : " . $row['name'] . " Dengan Harga Rp " . number_format($row['price'], 0, ',', '.') . ".";
               $whatsappLink = "https://wa.me/6281992336819?text=" . urlencode($whatsappMessage); 
           
               // Menampilkan tombol beli
